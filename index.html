@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- change "Your Name Here" to be your name -->
+<meta name="authors" content="Gargi Deshmukh">
+<style>
+  /* CSS for the whole document */
+body {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+  
+/* CSS for dark mode */
+  .dark-mode {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* CSS for the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.topnav a.active {
+  background-color: #624db0;
+  color: white;
+}
+
+/* CSS for the image */
+.webimage img{
+  padding: 5%;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+  <!-- HTML for the navigation bar -->
+  <nav>
+    <div class="topnav">
+        <!-- these are the tabs on the navbar. unfortunately they don't go anywhere! if you want to add a page, you
+         can add the page to your website folder and add the filepath to the href section in the a tag. -->
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <!-- HTML for the text saying Hello World and Courtesy of CodeEducation-->
+  <div style="padding-left:16px">
+    <h2>Hello World!</h2>
+    <p>Courtesy of CodeEducation</p>
+  </div>
+
+    <!-- HTML for dark mode button -->
+    <div style="padding-left:16px">
+      <h3>Toggle Dark/Light Mode</h3>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+
+    <!-- HTML for an image -->
+    <div class="webimage">
+      <!-- add an image here using a filepath -->
+      <img src="your image here" alt="Add an image!">
+    </div>
+
+</div>
+
+<!-- JavaScript for dark mode -->
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
+
